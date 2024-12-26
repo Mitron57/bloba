@@ -12,5 +12,4 @@ func main() {
     router := chi.NewRouter()
     users := services.Users{Storage: make(map[uuid.UUID]*models.User)}
     ctx := context.WithValue(context.Background(), "users", &users)
-    router.
 }
